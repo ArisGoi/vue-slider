@@ -19,9 +19,12 @@ const app = new Vue({
         },
         nextImg: function(){
             this.imgIndex++;
-            if (this.imgIndex >= app.images.length - 1) {
+            if (this.imgIndex >= app.images.length) {
                 app.imgIndex = 0;
             }
+        },
+        choseImg: function(index){
+            this.imgIndex = index;
         }
     },
 });
