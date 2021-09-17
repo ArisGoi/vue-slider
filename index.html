@@ -15,11 +15,11 @@
     <header>
         <div class="container">
             <div class="slider">
-                <i class="fas fa-angle-left"></i>
+                <i class="fas fa-angle-left" @click="prevImg()"></i>
                 <div class="imgs-box">
-                    <img src="imgs/cibo.jpg" alt="">
+                    <img :src="images[imgIndex]">
                 </div>
-                <i class="fas fa-angle-right"></i>
+                <i class="fas fa-angle-right" @click="nextImg()"></i>
             </div>
         </div>
     </header>
