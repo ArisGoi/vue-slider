@@ -8,21 +8,20 @@ const app = new Vue({
             "imgs/mare2.jpg",
             "imgs/scrivania.jpg"
         ],
-        imgIndex: 0,
+        imgIndex: 0
     },
     methods:{
         prevImg: function(){
             this.imgIndex--;
             if (this.imgIndex < 0) {
-                this.imgIndex = this.images.lenght;
+                this.imgIndex = this.images.length - 1;
             }
         },
-
         nextImg: function(){
             this.imgIndex++;
-            if (this.imgIndex >= app.images.lenght - 1) {
+            if (this.imgIndex >= app.images.length - 1) {
                 app.imgIndex = 0;
             }
-        },
+        }
     },
 });
